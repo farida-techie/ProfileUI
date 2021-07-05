@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_centerInParent="true"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="40dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            card_view:cardCornerRAdius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:text="Mariya Doe"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                   android:layout_marginTop="2dp"
+                    android:text="PID:362Hb458760"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textColor="#5C5A5A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:background="#79D6D1D1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Personal Info"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:background="#79D6D1D1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Family"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#636262"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:background="#79D6D1D1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Vitals"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#636262"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:src="@drawable/slider"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:elevation="15dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="98dp"
+        android:layout_height="98dp"/>
+</RelativeLayout>
